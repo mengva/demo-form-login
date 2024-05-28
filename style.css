@@ -1,0 +1,124 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    outline: none;
+    border: none;
+    letter-spacing: 0.1rem;
+  }
+
+  :root {
+    --aqua: #11d7d7;
+    --pink: #f004f0;
+    --green: #30ff45;
+    --orange: #e04f04;
+    --red: #e03;
+    --blue: #23ff;
+    --white: #fff;
+    --black: #222;
+    --gray: #abc;
+  }
+
+  body {
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    place-items: center;
+    position: relative;
+    background-color: var(--blue);
+  }
+
+  .container-login {
+    width: 450px;
+    padding: 2rem;
+    background-color: var(--white);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .container-login .box {
+    display: inline-flex;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 1rem;
+    column-gap: 1rem;
+  }
+
+  .container-login .box > div {
+    width: 20px;
+    height: 30px;
+    background-color: var(--blue);
+  }
+  .container-login .box > h1 {
+    font-size: 2rem;
+    color: var(--blue);
+  }
+
+  /* form input */
+
+  .container-login form {
+    width: 100%;
+  }
+
+  .container-login form input {
+    padding: 0.8rem;
+    border: 1px solid var(--blue);
+    caret-color: var(--blue);
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+    font-size: 16px;
+  }
+
+  .container-login form input::placeholder {
+    color: var(--gray);
+  }
+
+  .container-login form button {
+    padding: 0.8rem;
+    display: block;
+    width: 100%;
+    background-color: var(--blue);
+    color: var(--white);
+    cursor: pointer;
+    margin-bottom: 1.5rem;
+    font-size: 18px;
+    letter-spacing: 0.1rem;
+  }
+
+  /* d-flex */
+
+  .container-login .d-flex {
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+  }
+
+  /* box color */
+
+  .box-color {
+    position: absolute;
+    padding: 1rem;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--white);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .box-color .btn {
+    width: 50px;
+    height: 50px;
+    display: block;
+    background-color: var(--bg);
+    margin-bottom: 1rem;
+    cursor: pointer;
+  }
+
+  .box-color .btn:last-child {
+    margin: 0;
+  }
+
+  .active{
+    outline: 4px solid var(--black);
+  }
